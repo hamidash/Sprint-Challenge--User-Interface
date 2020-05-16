@@ -36,13 +36,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+A: Semantic HTML is the HTML that contains meaning.
+
 2. What are the 4 areas of the box model?
+
+A: Content, Padding, Border, Margin
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+A: Cross Axis
+
 4. Explain why git is valuable to a team of developers.
 
+A: It enables for developers to control the source and version of their software so multiple developers can make a change to it
+
 5. Define mobile-first design in your own words.
+
+A: Mobile first design, is a concept that is designed around mobile screens. It means that, when we design our pages we take into smaller mobile screens first and then expand to desktop.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,12 +60,12 @@ You are expected to be able to answer all these questions. Your responses contri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [+] Create a forked copy of this project
+- [+] Add your team lead as collaborator on Github
+- [+] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [+] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [+] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [+] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2:  Minimum Viable Product
 
@@ -65,10 +75,10 @@ Your finished project must include all of the following requirements:
 
 [Review the provided design files](/design). Notice the navigation and header images are missing in the starter code.
 
-* [ ] Build the HTML and CSS to create the missing navigation and header
-* [ ] Link the `About` navigation item to an about.html page (you'll also need to create `about.html`)
-* [ ] Make your design responsive such that it is accessible on mobile(500px)and matches the [mobile](design/Mobile.png) wireframe.
-* [ ] Add responsive breakpoints to your code by using media queries
+* [+] Build the HTML and CSS to create the missing navigation and header
+* [+] Link the `About` navigation item to an about.html page (you'll also need to create `about.html`)
+* [+] Make your design responsive such that it is accessible on mobile(500px)and matches the [mobile](design/Mobile.png) wireframe.
+* [+] Add responsive breakpoints to your code by using media queries
 
 You will also notice there are 10 boxes on the home page that need background colors.  Use this list below to correctly style each box:
 

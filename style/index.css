@@ -28,8 +28,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /* Hamida's changes for accessibility */ 
+}
+
 body {
-	line-height: 1;
+    line-height: 1;
+    
 }
 ol, ul {
 	list-style: none;
@@ -47,15 +60,6 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -66,6 +70,71 @@ p {
     line-height: 1.4;
 }
 
+/* Our customization */
+header, div {
+    background-color: white;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p, .boxes {
+    font-size: 1.5rem;
+}
+
+.header-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+
+    border: 2px;
+    border-color:   rgb(221, 19, 19);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.logo{
+    margin: 10 auto;
+    border: 2px;
+    border-color:   rgb(221, 19, 19);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.nav{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    border: 2px;
+    border-color:   rgb(221, 19, 19);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.nav a { 
+    padding: 35px;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px;
+    border-color:   rgb(221, 19, 19);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+header, .container, .bottom-content {
+    background-color: white;
+}
 .container {
     width: 800px;
     margin: 0 auto;
@@ -76,6 +145,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 1px dashed black;
 }
 
@@ -129,6 +199,8 @@ p {
 footer {
     width: 100%;
     background: black;
+    display: flex;
+    align-items: flex-end;
 }
 
 footer nav {
@@ -144,3 +216,120 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* My changes */
+
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color:cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color:forestgreen;
+}
+#box7 {
+    background-color:darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color:dodgerblue;
+}
+
+@media(max-width: 500px) {
+    .header-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .nav a { 
+        padding: 5px;
+        font-size: 2.5rem;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        max-width: 100%;
+        min-width: 200px;
+        height: auto;
+      }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+      .middle-content .boxes .box {
+        width: 25%;
+        height: 200px;
+        background: black;
+        margin: 5px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2% 10px;
+        justify-content: space-around;
+    }
+
+    .header-img {
+        max-width: 100%;
+        height: auto;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    footer nav{ 
+        flex-direction: column;
+        font-size: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto
+    }
+
+    footer nav a {
+        margin-bottom: 6px;
+    }
+}
+
+
+
